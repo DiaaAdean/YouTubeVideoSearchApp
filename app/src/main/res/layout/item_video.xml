@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- صورة الفيديو -->
+        <ImageView
+            android:id="@+id/video_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="@color/placeholder_background"
+            android:contentDescription="مُعاينة الفيديو"
+            android:transitionName="video_thumbnail" />
+
+        <!-- العنوان -->
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عنوان الفيديو"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="12dp"
+            android:textColor="#000" />
+
+        <!-- اسم القناة -->
+        <TextView
+            android:id="@+id/video_channel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اسم القناة"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:textColor="#555" />
+
+        <!-- تاريخ النشر -->
+        <TextView
+            android:id="@+id/video_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2024-01-01"
+            android:textSize="12sp"
+            android:paddingTop="2dp"
+            android:textColor="#888" />
+
+        <!-- الوصف (مختصر) -->
+        <TextView
+            android:id="@+id/video_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="وصف قصير للفيديو..."
+            android:textSize="13sp"
+            android:paddingTop="6dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="#333" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

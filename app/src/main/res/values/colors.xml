@@ -1,0 +1,4 @@
+<resources>
+    <color name="placeholder_background">#F0F0F0</color>
+    <color name="error_background">#FFCDD2</color> <!-- أحمر فاتح -->
+</resources>
